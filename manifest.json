@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "URL Redirector",
+    "version": "1.0",
+    "description": "Captura e redireciona URLs com parâmetros",
+    "permissions": [
+      "activeTab"  
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.nemu.com.br/typ*"], 
+        "js": ["content.js"] 
+      }
+    ]
+  }
